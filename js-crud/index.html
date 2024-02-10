@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        <center>JavaScript CRUD</center>
+    </h1>
+    <hr>
+
+    <div class="employee-form">
+        <form action="" onsubmit="event.preventDefault(); onFormSubmit()" autocomplete="off">
+            <div>
+                <label for="">Full Name*</label>
+                <label for="" class="validation-error hide" id="fullNameValidationError">This filed is required</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label for="">Email Id</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <labe>Salary</labe>
+                <input type="text" id="salary" name="salary">
+            </div>
+            <div>
+                <label for="">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="employees-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
